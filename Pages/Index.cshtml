@@ -1,0 +1,22 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+
+    <form method="post" action="/YourController/StartImport">
+    <label for="owner">Owner:</label>
+    <input type="text" name="owner" id="owner">
+
+    <label for="repo">Repo:</label>
+    <input type="text" name="repo" id="repo">
+
+    <button type="submit">Import Commits</button>
+</form>
+
+</div>
